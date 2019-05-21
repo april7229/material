@@ -1,5 +1,7 @@
 import React, { Component, Fragment } from 'react';
-import { Header, Footer} from './Layouts'
+import { Header, Footer } from './Layouts';
+import Exercises from './Exercises';
+
 
 
 export default class extends Component
@@ -8,6 +10,7 @@ export default class extends Component
   {
     return <Fragment>
       <Header />
+      <Exercises />
     <Footer />
     </Fragment>
   }
