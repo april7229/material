@@ -3,5 +3,5 @@ import React from 'react';
 
 export default props =>
   <div>
-    <h1>Hi from react</h1>
+    <h1>Header</h1>
   </div>
