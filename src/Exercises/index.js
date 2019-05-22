@@ -1,7 +1,7 @@
 import React from 'react';
-import { Grid, Paper } from 'material-ui';
+import {  Paper } from 'material-ui';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-
+import Grid from '@material-ui/core/Grid';
      
    
 
