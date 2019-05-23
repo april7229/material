@@ -1,9 +1,13 @@
 import React from 'react';
-import {  Paper } from 'material-ui';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Grid from '@material-ui/core/Grid';
-     
+import LeftPane from './LeftPane';
+import RightPane from './RightPane'
    
+
+const styles = {
+    Paper: { padding: 20, marginTop: 10, marginBottom: 10 }
+};
 
 export default props =>
     
@@ -11,16 +15,11 @@ export default props =>
     <MuiThemeProvider>
         <Grid container >
             <Grid item sm>
-            <Paper style ={{padding:20, marginTop: 10, marginBottom: 10}} >
-                Left Pane
-            </Paper>
-            </Grid>    
+                <LeftPane styles={styles} />
+    </Grid>
                 
-
-            <Grid  >
-                <Paper styles={{ padding: 20,  marginTop: 10, marginBottom: 10}}>
-                Right pane
-                </Paper>
+            <Grid item sm>
+                <RightPane styles={styles} />
             </Grid>
             
         </Grid>

@@ -4,8 +4,7 @@ import { Tab } from 'material-ui/Tabs';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 
-
-export default props =>
+export default ( { muscles })  =>
   <MuiThemeProvider>
   <Paper>
       <Tabs      
@@ -13,9 +12,11 @@ export default props =>
       indicatorColor="primary"
         centered
       >
-      <Tab label="Item one" />
-      <Tab label="Item two" />
-      <Tab label="Item three" />
+        <Tab label="All" />
+        {muscles.map(group =>
+        <Tab label={group} />
+        )}
+        
     </Tabs>
     </Paper>
   </MuiThemeProvider>
