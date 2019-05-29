@@ -8,7 +8,7 @@ import { muscles, exercises } from './store.js';
 
 export default class extends Component
 {
-  states = {
+  state = {
     exercises
   }
 
